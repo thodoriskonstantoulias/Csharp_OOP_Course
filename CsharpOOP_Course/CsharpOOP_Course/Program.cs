@@ -15,7 +15,10 @@ namespace CsharpOOP_Course
             //Fundamentals - 2
 
             //DataTypes.MaxDataTypesNumbers();
-            DataTypes.CheckPrecision();
+            //DataTypes.CheckPrecision();
+
+            //Datetimes.DatetimesInGeneral();
+            Datetimes.FormatString();
 
             Console.ReadLine();
         }
