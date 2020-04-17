@@ -18,5 +18,20 @@ namespace CsharpOOP_Course.Fundamentals
             x = (int)f;
             Console.WriteLine("Type casting method value : " + x);
         }
+
+        public static void MaxDataTypesNumbers()
+        {
+            Console.WriteLine("The maximum number for int is " + int.MaxValue);
+            Console.WriteLine("The maximum number for float is " + float.MaxValue);
+            Console.WriteLine("The maximum number for double is " + double.MaxValue);
+            Console.WriteLine("The maximum number for decimal is " + decimal.MaxValue);
+        }
+
+        public static void CheckPrecision()
+        {
+            Console.WriteLine("Float : 1/3 = " + 1/3f);
+            Console.WriteLine("Double : 1/3 = " + 1 / 3d);
+            Console.WriteLine("Decimal : 1/3 = " + 1 / 3m);
+        }
     }
 }

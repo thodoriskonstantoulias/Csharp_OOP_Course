@@ -8,8 +8,14 @@ namespace CsharpOOP_Course
         static void Main(string[] args)
         {
             //Fundamentals - 1 
+
             //Tip : ConvertToInt32 actually rounds the number. Type casting just floors
-            DataTypes.DifferenceInIntConversion();
+            //DataTypes.DifferenceInIntConversion();
+
+            //Fundamentals - 2
+
+            //DataTypes.MaxDataTypesNumbers();
+            DataTypes.CheckPrecision();
 
             Console.ReadLine();
         }
