@@ -33,7 +33,9 @@ namespace CsharpOOP_Course
             //Strings.AdvancedStringManipulation();
 
             //Exercises.ShowEvenNumbers();
-            Exercises.ShowTriangleShapeWithZeros();
+            //Exercises.ShowTriangleShapeWithZeros();  
+            //Exercises.ShowUpsideTriangle();
+            Exercises.RollDiceGame();
 
             Console.ReadLine();
         }

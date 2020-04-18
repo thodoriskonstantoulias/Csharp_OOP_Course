@@ -63,5 +63,32 @@ namespace CsharpOOP_Course.Fundamentals
                 Console.WriteLine();
             }
         }
+
+        public static void ShowUpsideTriangle()
+        {
+            for (int i = 16; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("0");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void RollDiceGame()
+        {
+            Console.WriteLine("Roll dice (Yes,No)");
+            string ans = Console.ReadLine().ToLower();
+            Random rand = new Random();
+            
+            while( ans == "yes" )
+            {
+                Console.WriteLine($"New dice number is {rand.Next(1,7)}");
+                Console.WriteLine("Roll dice (Yes,No)");
+                ans = Console.ReadLine().ToLower();
+            }
+        }
+
     }
 }
