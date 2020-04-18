@@ -22,5 +22,18 @@ namespace CsharpOOP_Course.Fundamentals
             string trimmedText = "   some text   ";
             Console.WriteLine("The trimmed version is : " + trimmedText.Trim());
         }
+
+        public static void AdvancedStringManipulation()
+        {
+            string text = "Some text to play";
+            Console.WriteLine("The word is : " + text);
+
+            Console.WriteLine("The index of o is " + text.IndexOf('o'));
+            Console.WriteLine("The last index of o is " + text.LastIndexOf('o'));
+
+            Console.WriteLine("Substring of 2 until 6th char is : " + text.Substring(2,6));
+            Console.WriteLine("Remove of 2 until 6th char is : " + text.Remove(2,6));
+            Console.WriteLine("Insert of a random in the string is : " + text.Insert(1, "lala"));
+        }
     }
 }

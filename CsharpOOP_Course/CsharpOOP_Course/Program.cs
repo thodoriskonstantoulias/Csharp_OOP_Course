@@ -28,7 +28,8 @@ namespace CsharpOOP_Course
             //Exercises.FindTheDay();
 
             //Fundamentals - 3
-            Strings.StringManipulation();
+            //Strings.StringManipulation();
+            Strings.AdvancedStringManipulation();
 
             Console.ReadLine();
         }
