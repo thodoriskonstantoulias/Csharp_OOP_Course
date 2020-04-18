@@ -25,7 +25,10 @@ namespace CsharpOOP_Course
 
             //Exercises.FriendlyConversation();
 
-            Exercises.FindTheDay();
+            //Exercises.FindTheDay();
+
+            //Fundamentals - 3
+            Strings.StringManipulation();
 
             Console.ReadLine();
         }
