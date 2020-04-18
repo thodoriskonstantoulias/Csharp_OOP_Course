@@ -18,7 +18,14 @@ namespace CsharpOOP_Course
             //DataTypes.CheckPrecision();
 
             //Datetimes.DatetimesInGeneral();
-            Datetimes.FormatString();
+            //Datetimes.FormatString();
+
+            //Console.WriteLine("Give a number");
+            //Exercises.EvenOrOdd(int.Parse(Console.ReadLine()));
+
+            //Exercises.FriendlyConversation();
+
+            Exercises.FindTheDay();
 
             Console.ReadLine();
         }
