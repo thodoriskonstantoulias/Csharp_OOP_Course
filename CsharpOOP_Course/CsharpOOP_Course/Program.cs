@@ -1,4 +1,5 @@
 ﻿using CsharpOOP_Course.Fundamentals;
+using CsharpOOP_Course.OOP;
 using System;
 
 namespace CsharpOOP_Course
@@ -35,7 +36,13 @@ namespace CsharpOOP_Course
             //Exercises.ShowEvenNumbers();
             //Exercises.ShowTriangleShapeWithZeros();  
             //Exercises.ShowUpsideTriangle();
-            Exercises.RollDiceGame();
+            //Exercises.RollDiceGame();
+
+            //OOP - 1
+            MethodOverloading.Add(1, 3);
+            MethodOverloading.Add(1, 3, 5);
+            MethodOverloading.Add(1.3, 3, 5.5);
+            MethodOverloading.Add(1.5, 3.3);
 
             Console.ReadLine();
         }
