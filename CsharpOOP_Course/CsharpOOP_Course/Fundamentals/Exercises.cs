@@ -43,5 +43,25 @@ namespace CsharpOOP_Course.Fundamentals
 
             Console.WriteLine("This day should be " + date.DayOfWeek);
         }
+
+        public static void ShowEvenNumbers()
+        {
+            for (int i = 0; i <= 100; i+= 2)
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        public static void ShowTriangleShapeWithZeros()
+        {
+            for (int i = 1; i <= 10 ; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("0");
+                }
+                Console.WriteLine();
+            }
+        }
     }
 }
