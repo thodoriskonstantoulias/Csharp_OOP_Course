@@ -40,6 +40,27 @@ namespace CsharpOOP_Course.OOP
             countryFirst.SayHi();
             countryFirst.SayHi(countryFirst);
         }
+
+        public static void ExceptionHandling()
+        {
+            int div = 0;
+            try
+            {
+                Console.WriteLine("Enter first number");
+                int num1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter second number");
+                int num2 = int.Parse(Console.ReadLine());
+                div = num1 / num2;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                Console.WriteLine("The result of division is " + div);
+            }           
+        }
     }
 
     public class Car

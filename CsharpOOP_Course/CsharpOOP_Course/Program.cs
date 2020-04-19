@@ -46,7 +46,8 @@ namespace CsharpOOP_Course
 
             //Exercises_OOP.InheritanceExample();
             //Exercises_OOP.PolymorphismExample();
-            Exercises_OOP.OOP_Big_Example();
+            //Exercises_OOP.OOP_Big_Example();
+            Exercises_OOP.ExceptionHandling();
 
             Console.ReadLine();
         }
