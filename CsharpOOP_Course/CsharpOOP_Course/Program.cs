@@ -44,7 +44,8 @@ namespace CsharpOOP_Course
             //MethodOverloading.Add(1.3, 3, 5.5);
             //MethodOverloading.Add(1.5, 3.3);
 
-            Exercises_OOP.InheritanceExample();
+            //Exercises_OOP.InheritanceExample();
+            Exercises_OOP.PolymorphismExample();
 
             Console.ReadLine();
         }

@@ -13,7 +13,46 @@ namespace CsharpOOP_Course.OOP
             fourWheels.Drive();
             fourWheels.Start();
         }
+
+        public static void PolymorphismExample()
+        {
+            Car general = new Car(5000,"White", 150);
+            general.DisplayInfo();
+            Car mer = new Mercedes(10000,"Black",250);
+            mer.DisplayInfo();
+        }
     }
+
+    public class Car
+    {
+        public Car(decimal price, string color, int maxSp)
+        {
+            Price = price;
+            Color = color;
+            maxSpeed = maxSp;
+        }
+        public decimal Price { get; set; }
+        public string Color { get; set; }
+        protected int maxSpeed { get; set; }
+
+        public virtual void DisplayInfo()
+        {
+            Console.WriteLine($"price is {Price}, and color is {Color} and max speed is {maxSpeed} for base class");
+        }
+    }
+
+    public class Mercedes : Car
+    {
+        public Mercedes(decimal price, string color, int maxSp) : base(price, color, maxSp)
+        {
+            
+        }
+        public override void DisplayInfo()
+        {
+            Console.WriteLine($"price is {Price}, and color is {Color} and max speed is {maxSpeed} for child class");
+        }
+    }
+
 
     public class Vehicle
     {       
