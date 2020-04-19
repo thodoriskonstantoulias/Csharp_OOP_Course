@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CsharpOOP_Course.OOP.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -20,6 +21,24 @@ namespace CsharpOOP_Course.OOP
             general.DisplayInfo();
             Car mer = new Mercedes(10000,"Black",250);
             mer.DisplayInfo();
+        }
+
+        public static void OOP_Big_Example()
+        {
+            Country countryFirst = new Country("Greece", "Athens");
+            Country countrySecond = new Country("France", "Paris");
+
+            CountryLanguages countryLanguages = new CountryLanguages();
+            countryLanguages.FirstLanguage = Languages.English;
+            countryLanguages.SecondLanguage = Languages.Italian;
+
+            countryFirst.CountryLanguages = countryLanguages;
+            countryFirst.PlanetName = "earth";
+            countryFirst.Continents = Continents.Europe;
+            countryFirst.Currency = Currencies.Euro;
+
+            countryFirst.SayHi();
+            countryFirst.SayHi(countryFirst);
         }
     }
 
