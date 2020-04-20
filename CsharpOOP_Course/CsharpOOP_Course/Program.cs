@@ -56,7 +56,8 @@ namespace CsharpOOP_Course
             //Cryptography.TestCrypto();
 
             //Advanced 2 
-            ArrayListNonGeneric.PlayingWithArrayLists();
+            //ArrayListNonGeneric.PlayingWithArrayLists();
+            HashTablesNonGeneric.PlayingWithHashTables();
 
             Console.ReadLine();
         }
