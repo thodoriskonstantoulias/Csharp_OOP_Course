@@ -58,7 +58,8 @@ namespace CsharpOOP_Course
             //Advanced 2 
             //ArrayListNonGeneric.PlayingWithArrayLists();
             //HashTablesNonGeneric.PlayingWithHashTables();
-            SortedListNonGeneric.PlayingWithSortedLists();
+            //SortedListNonGeneric.PlayingWithSortedLists();
+            StackNonGeneric.PlayingWithStacks();
 
             Console.ReadLine();
         }
