@@ -61,7 +61,9 @@ namespace CsharpOOP_Course
             //SortedListNonGeneric.PlayingWithSortedLists();
             //StackNonGeneric.PlayingWithStacks();
             //QueueNonGeneric.PlayingWithQueues();
-            BitArrayNonGeneric.PlayingWithBitArrays();
+            //BitArrayNonGeneric.PlayingWithBitArrays();
+
+            Exercises_Advanced.NonGenericCollectionExercise();
 
             Console.ReadLine();
         }
