@@ -51,7 +51,9 @@ namespace CsharpOOP_Course
             //Exercises_OOP.ExceptionHandling();
 
             //Advanced 1
-            Exercises_Advanced.FileCreationExercise();
+            //Exercises_Advanced.FileCreationExercise();
+
+            Cryptography.TestCrypto();
 
             Console.ReadLine();
         }
