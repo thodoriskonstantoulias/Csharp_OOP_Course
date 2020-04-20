@@ -53,7 +53,10 @@ namespace CsharpOOP_Course
             //Advanced 1
             //Exercises_Advanced.FileCreationExercise();
 
-            Cryptography.TestCrypto();
+            //Cryptography.TestCrypto();
+
+            //Advanced 2 
+            ArrayListNonGeneric.PlayingWithArrayLists();
 
             Console.ReadLine();
         }
