@@ -63,7 +63,9 @@ namespace CsharpOOP_Course
             //QueueNonGeneric.PlayingWithQueues();
             //BitArrayNonGeneric.PlayingWithBitArrays();
 
-            Exercises_Advanced.NonGenericCollectionExercise();
+            //Exercises_Advanced.NonGenericCollectionExercise();
+
+            ListGeneric.PlayingWithLists();
 
             Console.ReadLine();
         }
