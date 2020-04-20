@@ -1,4 +1,5 @@
-﻿using CsharpOOP_Course.Fundamentals;
+﻿using CsharpOOP_Course.Advanced;
+using CsharpOOP_Course.Fundamentals;
 using CsharpOOP_Course.OOP;
 using System;
 
@@ -47,7 +48,10 @@ namespace CsharpOOP_Course
             //Exercises_OOP.InheritanceExample();
             //Exercises_OOP.PolymorphismExample();
             //Exercises_OOP.OOP_Big_Example();
-            Exercises_OOP.ExceptionHandling();
+            //Exercises_OOP.ExceptionHandling();
+
+            //Advanced 1
+            Exercises_Advanced.FileCreationExercise();
 
             Console.ReadLine();
         }
