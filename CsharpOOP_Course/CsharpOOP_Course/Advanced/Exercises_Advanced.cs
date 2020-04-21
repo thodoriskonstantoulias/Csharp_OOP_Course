@@ -69,6 +69,8 @@ namespace CsharpOOP_Course.Advanced
             movies1.Name = "Lord of the Rings";
             movies1.Rate = 15.5d;
             movies1.ReleaseDate = new DateTime(2000, 01, 01);
+            movies1.Genres.Add(Genres.Action);
+            movies1.Genres.Add(Genres.Thriller);
 
             Movies<float, int> movies2 = new Movies<float, int>();
             movies2.Name = "Seven";
@@ -86,6 +88,10 @@ namespace CsharpOOP_Course.Advanced
                 Console.WriteLine(item.Name);
                 Console.WriteLine(item.Rate);
                 Console.WriteLine(item.ReleaseDate);
+                foreach (var item2 in item.Genres)
+                {
+                    Console.WriteLine(item2);
+                }
             }
 
             Console.WriteLine("List 2");
@@ -165,6 +171,11 @@ namespace CsharpOOP_Course.Advanced
         public string Director { get; set; }
         public T1 Rate { get; set; }
         public T2 ReleaseDate { get; set; }
+        public List<Genres> Genres { get; set; }
+        public Movies()
+        {
+            Genres = new List<Genres>();
+        }
     }
 
     struct Animals
@@ -205,5 +216,11 @@ namespace CsharpOOP_Course.Advanced
         English,
         German,
         Arabic
+    }
+
+    enum Genres
+    {
+        Thriller,
+        Action
     }
 }
