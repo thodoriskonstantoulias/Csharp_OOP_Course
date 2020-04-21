@@ -76,7 +76,8 @@ namespace CsharpOOP_Course
             //Tuples.PlayingWithTuples();
             //Tuples.PlayingWithNestedTuples();
 
-            Exercises_Advanced.TuplesExercise();
+            //Exercises_Advanced.TuplesExercise();
+            Exercises_Advanced.TuplesExercise2();
 
             Console.ReadLine();
         }

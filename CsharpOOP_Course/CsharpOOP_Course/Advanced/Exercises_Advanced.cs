@@ -122,6 +122,41 @@ namespace CsharpOOP_Course.Advanced
                 Console.WriteLine("-------------");
             }
         }
+
+        public static void TuplesExercise2()
+        {
+            List<Tuple<int, string, int>> list = new List<Tuple<int, string, int>>();
+            Add(list, 1, "Ted",29);
+            Add(list, 2, "Kostas", 44);
+            Console.WriteLine("First add method");
+            foreach (var item in list)
+            {
+                Console.WriteLine(item.Item1);
+                Console.WriteLine(item.Item2);
+                Console.WriteLine(item.Item3);
+                Console.WriteLine("----------");
+            }
+
+            Add(list, 3, "Maria", 50,1);
+            Console.WriteLine("Second add method");
+            foreach (var item in list)
+            {
+                Console.WriteLine(item.Item1);
+                Console.WriteLine(item.Item2);
+                Console.WriteLine(item.Item3);
+                Console.WriteLine("----------");
+            }
+        }
+
+        public static void Add(List<Tuple<int, string, int>> list, int a , string b , int c)
+        {
+            list.Add(new Tuple<int, string, int>(a, b, c));
+        }
+
+        public static void Add(List<Tuple<int, string, int>> list, int a, string b, int c,int index)
+        {
+            list.Insert(index, new Tuple<int, string, int>(a, b, c));
+        }
     }
 
     class Movies<T1,T2>
