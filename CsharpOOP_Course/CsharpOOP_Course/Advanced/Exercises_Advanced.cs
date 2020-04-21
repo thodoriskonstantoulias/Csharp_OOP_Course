@@ -62,6 +62,48 @@ namespace CsharpOOP_Course.Advanced
             }
 
         }
+
+        public static void GenericClassesExercise()
+        {
+            Movies<double, DateTime> movies1 = new Movies<double, DateTime>();
+            movies1.Name = "Lord of the Rings";
+            movies1.Rate = 15.5d;
+            movies1.ReleaseDate = new DateTime(2000, 01, 01);
+
+            Movies<float, int> movies2 = new Movies<float, int>();
+            movies2.Name = "Seven";
+            movies2.Rate = 15.3f;
+            movies2.ReleaseDate = 2007;
+
+            List<Movies<double, DateTime>> list1 = new List<Movies<double, DateTime>>();
+            list1.Add(movies1);
+            List<Movies<float, int>> list2 = new List<Movies<float, int>>();
+            list2.Add(movies2);
+
+            Console.WriteLine("List 1");
+            foreach (var item in list1)
+            {
+                Console.WriteLine(item.Name);
+                Console.WriteLine(item.Rate);
+                Console.WriteLine(item.ReleaseDate);
+            }
+
+            Console.WriteLine("List 2");
+            foreach (var item in list2)
+            {
+                Console.WriteLine(item.Name);
+                Console.WriteLine(item.Rate);
+                Console.WriteLine(item.ReleaseDate);
+            }
+        }
+    }
+
+    class Movies<T1,T2>
+    {
+        public string Name { get; set; }
+        public string Director { get; set; }
+        public T1 Rate { get; set; }
+        public T2 ReleaseDate { get; set; }
     }
 
     struct Animals
