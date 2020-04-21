@@ -67,7 +67,8 @@ namespace CsharpOOP_Course
 
             //ListGeneric.PlayingWithLists();
             //DictionaryGeneric.PlayingWithDictionaries();
-            SortedListGeneric.PlayingWithSortedLists();
+            //SortedListGeneric.PlayingWithSortedLists();
+            KeyValuePairsGeneric.PlayingWithKeyValuePairs();
 
             Console.ReadLine();
         }
