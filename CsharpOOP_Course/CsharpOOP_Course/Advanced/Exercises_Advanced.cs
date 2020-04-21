@@ -96,6 +96,32 @@ namespace CsharpOOP_Course.Advanced
                 Console.WriteLine(item.ReleaseDate);
             }
         }
+
+        public static void TuplesExercise()
+        {
+            List<Tuple<int, string, string, DateTime>> list = new List<Tuple<int, string, string, DateTime>>();
+            list.Add(Tuple.Create(2, "Ted", "Kos", new DateTime(2001, 04, 05)));
+            list.Add(Tuple.Create(1, "Kostas", "Kos", new DateTime(2004, 06, 04)));
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item.Item1);
+                Console.WriteLine(item.Item2);
+                Console.WriteLine(item.Item3);
+                Console.WriteLine(item.Item4);
+                Console.WriteLine("-------------");
+            }
+
+            list.Sort();
+            foreach (var item in list)
+            {
+                Console.WriteLine(item.Item1);
+                Console.WriteLine(item.Item2);
+                Console.WriteLine(item.Item3);
+                Console.WriteLine(item.Item4);
+                Console.WriteLine("-------------");
+            }
+        }
     }
 
     class Movies<T1,T2>
