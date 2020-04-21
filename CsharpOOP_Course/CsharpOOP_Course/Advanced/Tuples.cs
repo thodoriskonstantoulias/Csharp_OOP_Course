@@ -25,6 +25,10 @@ namespace CsharpOOP_Course.Advanced
             Console.WriteLine(studentInfo.Item3);
             Console.WriteLine(studentInfo.Item4);
             Console.WriteLine(studentInfo.Item5);
+
+            Console.WriteLine("----------------");
+            var testMethod = Tuple.Create(1, "Ted", "Kos");
+            DisplayInfo(testMethod);
         }
 
         public static void PlayingWithNestedTuples()
@@ -34,6 +38,13 @@ namespace CsharpOOP_Course.Advanced
 
             Console.WriteLine(empInfo.Item1);
             Console.WriteLine(empInfo.Rest.Item1);
+        }
+
+        public static void DisplayInfo(Tuple<int,string,string> perInfo)
+        {
+            Console.WriteLine(perInfo.Item1);
+            Console.WriteLine(perInfo.Item2);
+            Console.WriteLine(perInfo.Item3);
         }
     }
 }
