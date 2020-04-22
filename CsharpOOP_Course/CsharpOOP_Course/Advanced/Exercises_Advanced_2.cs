@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -20,6 +21,19 @@ namespace CsharpOOP_Course.Advanced
             {
                 Console.WriteLine($"{new string(' ',indent)} {Path.GetFileName(folder)}");
                 DisplayFolder(folder, indent + 2);
+            }
+        }
+
+        public static void ParamsExercise()
+        {
+            DisplayItems("ted", "kostas", "maria");
+        }
+
+        public static void DisplayItems<T>(params T[] items)
+        {
+            foreach (var item in items)
+            {
+                Console.WriteLine(item);
             }
         }
     }

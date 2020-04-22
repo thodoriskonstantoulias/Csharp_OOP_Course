@@ -80,7 +80,8 @@ namespace CsharpOOP_Course
             //Exercises_Advanced.TuplesExercise2();
 
             //Advanced 3
-            Exercises_Advanced_2.RecursionExercise();
+            //Exercises_Advanced_2.RecursionExercise();
+            Exercises_Advanced_2.ParamsExercise();
 
 
             Console.ReadLine();
