@@ -71,13 +71,17 @@ namespace CsharpOOP_Course
             //KeyValuePairsGeneric.PlayingWithKeyValuePairs();
             //NameValueCollections.PlayingWithNameValueCollections();
 
-            Exercises_Advanced.GenericClassesExercise();
+            //Exercises_Advanced.GenericClassesExercise();
 
             //Tuples.PlayingWithTuples();
             //Tuples.PlayingWithNestedTuples();
 
             //Exercises_Advanced.TuplesExercise();
             //Exercises_Advanced.TuplesExercise2();
+
+            //Advanced 3
+            Exercises_Advanced_2.RecursionExercise();
+
 
             Console.ReadLine();
         }
