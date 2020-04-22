@@ -36,5 +36,18 @@ namespace CsharpOOP_Course.Advanced
                 Console.WriteLine(item);
             }
         }
+        public static void ExtensionMethodExercise()
+        {
+            DateTime date = new DateTime(2020, 04, 06);
+            date.DisplayDate();
+        }
+    }
+
+    public static class Extensions
+    {
+        public static void DisplayDate(this DateTime date)
+        {
+            Console.WriteLine(string.Format("{0:dddd d \nMMMM yyyy }",date));
+        }
     }
 }
