@@ -82,7 +82,8 @@ namespace CsharpOOP_Course
             //Advanced 3
             //Exercises_Advanced_2.RecursionExercise();
             //Exercises_Advanced_2.ParamsExercise();
-            Exercises_Advanced_2.ExtensionMethodExercise();
+            //Exercises_Advanced_2.ExtensionMethodExercise();
+            Exercises_Advanced_2.DelegatesExercise();
 
 
             Console.ReadLine();

@@ -6,8 +6,9 @@ using System.Text;
 
 namespace CsharpOOP_Course.Advanced
 {
+    public delegate void DisplayDelegate(Dictionary<int, string> dict);
     public class Exercises_Advanced_2
-    {
+    {       
         public static void RecursionExercise()
         {
             string path = @"D:\Users\TED\Desktop\test_course";
@@ -40,6 +41,23 @@ namespace CsharpOOP_Course.Advanced
         {
             DateTime date = new DateTime(2020, 04, 06);
             date.DisplayDate();
+        }
+
+        public static void DelegatesExercise()
+        {
+            DisplayDelegate del = new DisplayDelegate(DisplayDictInfo);
+            Dictionary<int, string> dict = new Dictionary<int, string>();
+            dict.Add(1, "ted");
+            dict.Add(2, "kostas");
+            del(dict);
+        }
+
+        public static void DisplayDictInfo(Dictionary<int,string> dict)
+        {
+            foreach (var item in dict)
+            {
+                Console.WriteLine(item.Key + " : " + item.Value);
+            }
         }
     }
 
