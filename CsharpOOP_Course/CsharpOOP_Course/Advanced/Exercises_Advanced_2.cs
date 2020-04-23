@@ -7,6 +7,7 @@ using System.Text;
 namespace CsharpOOP_Course.Advanced
 {
     public delegate void DisplayDelegate(Dictionary<int, string> dict);
+    public delegate void CalcDelegate(int a, int b);
     public class Exercises_Advanced_2
     {       
         public static void RecursionExercise()
@@ -58,12 +59,33 @@ namespace CsharpOOP_Course.Advanced
             del(dict);
         }
 
+        public static void DelegatesExercise2()
+        {
+            CalcDelegate calDel = new CalcDelegate(Add);
+            calDel += Subtract;
+            calDel += Mult;
+            calDel(2, 4);
+        }
+
         public static void DisplayDictInfo(Dictionary<int,string> dict)
         {
             foreach (var item in dict)
             {
                 Console.WriteLine(item.Key + " : " + item.Value);
             }
+        }
+
+        public static void Add(int a , int b)
+        {
+            Console.WriteLine(a + b);
+        }
+        public static void Subtract(int a, int b)
+        {
+            Console.WriteLine(a - b);
+        }
+        public static void Mult(int a, int b)
+        {
+            Console.WriteLine(a * b);
         }
     }
 
