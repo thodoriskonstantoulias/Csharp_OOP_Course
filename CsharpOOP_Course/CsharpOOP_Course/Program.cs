@@ -2,6 +2,7 @@
 using CsharpOOP_Course.Fundamentals;
 using CsharpOOP_Course.OOP;
 using System;
+using System.Collections.Generic;
 
 namespace CsharpOOP_Course
 {
@@ -85,8 +86,10 @@ namespace CsharpOOP_Course
             //Exercises_Advanced_2.ExtensionMethodExercise();
             //Exercises_Advanced_2.DelegatesExercise();
             //Exercises_Advanced_2.ExtensionExercise2();
-            Exercises_Advanced_2.DelegatesExercise2();
+            //Exercises_Advanced_2.DelegatesExercise2();
 
+            //Advanced 4
+            Exercises_Advanced_3.LINQExercise();
 
             Console.ReadLine();
         }
