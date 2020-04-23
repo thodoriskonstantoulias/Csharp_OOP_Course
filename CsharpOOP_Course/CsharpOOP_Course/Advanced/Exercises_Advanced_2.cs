@@ -43,6 +43,12 @@ namespace CsharpOOP_Course.Advanced
             date.DisplayDate();
         }
 
+        public static void ExtensionExercise2()
+        {
+            string str = "test hello t there";            
+            Console.WriteLine(str.Capitalize());
+        }
+         
         public static void DelegatesExercise()
         {
             DisplayDelegate del = new DisplayDelegate(DisplayDictInfo);
@@ -66,6 +72,25 @@ namespace CsharpOOP_Course.Advanced
         public static void DisplayDate(this DateTime date)
         {
             Console.WriteLine(string.Format("{0:dddd d \nMMMM yyyy }",date));
+        }
+
+        public static string Capitalize(this string word)
+        {
+            bool blankFound = false;
+            char[] ch = word.Trim().ToLower().ToCharArray();
+
+            ch[0] = (char)((int)ch[0] - 32);
+
+            for (int i = 1; i < ch.Length; i++)
+            {
+                if (blankFound && ch[i] != ' ')
+                {
+                    ch[i] = (char)((int)ch[i] - 32);
+                    blankFound = false;
+                }
+                if (ch[i] == ' ') blankFound = true;
+            }
+            return new string(ch);
         }
     }
 }
