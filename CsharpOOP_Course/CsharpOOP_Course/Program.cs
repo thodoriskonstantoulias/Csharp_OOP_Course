@@ -89,7 +89,8 @@ namespace CsharpOOP_Course
             //Exercises_Advanced_2.DelegatesExercise2();
 
             //Advanced 4
-            Exercises_Advanced_3.LINQExercise();
+            //Exercises_Advanced_3.LINQExercise();
+            Exercises_Advanced_3.LINQExercise2();
 
             Console.ReadLine();
         }

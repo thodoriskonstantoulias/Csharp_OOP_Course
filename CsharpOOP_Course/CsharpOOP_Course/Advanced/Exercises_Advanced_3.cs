@@ -16,8 +16,28 @@ namespace CsharpOOP_Course.Advanced
                 new Person {Age = 35, Name = "Maria", Salary = 5545.5d}
             };
 
-            //Method syntax
+            //Method syntax 
             var people = list.Where(p => p.Age > 33);
+            foreach (var item in people)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+
+        public static void LINQExercise2()
+        {
+            List<Person> list = new List<Person>()
+            {
+                new Person {Age = 29, Name = "Ted", Salary = 10500d},
+                new Person {Age = 40, Name = "Kostas", Salary = 45000d},
+                new Person {Age = 35, Name = "Maria", Salary = 5545.5d}
+            };
+
+            //Query syntax 
+            var people = from per in list
+                         where per.Age > 36
+                         select per;
+
             foreach (var item in people)
             {
                 Console.WriteLine(item.Name);
