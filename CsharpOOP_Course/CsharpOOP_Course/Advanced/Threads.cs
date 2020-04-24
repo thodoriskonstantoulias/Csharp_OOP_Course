@@ -17,7 +17,7 @@ namespace CsharpOOP_Course.Advanced
             //SayHelloSeq();
             //watch.Stop();
             //Console.WriteLine("Miliseconds passed : " + watch.Elapsed.TotalMilliseconds +"ms");
-
+           
             watch.Start();
             Thread t1 = new Thread(new ThreadStart(SayHiSeq));
             t1.Start();
