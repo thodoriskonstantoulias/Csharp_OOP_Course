@@ -91,7 +91,9 @@ namespace CsharpOOP_Course
             //Advanced 4
             //Exercises_Advanced_3.LINQExercise();
             //Exercises_Advanced_3.LINQExercise2();
-            Exercises_Advanced_3.LINQSortingExercise();
+            //Exercises_Advanced_3.LINQSortingExercise();
+
+            Threads.PlayingWithThreads();
 
             Console.ReadLine();
         }
