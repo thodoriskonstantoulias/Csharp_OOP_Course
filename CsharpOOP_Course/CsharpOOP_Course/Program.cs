@@ -97,7 +97,8 @@ namespace CsharpOOP_Course
             //Exercises_Advanced_4.ThreadsExercise();
 
             //AsyncProgramming.PlayingWithAsyncProg();
-            AsyncProgramming.PlayingWithTasks();
+            //AsyncProgramming.PlayingWithTasks();
+            Exercises_Advanced_4.PlayingWithConcurrentCollections();
 
             Console.ReadLine();
         }
