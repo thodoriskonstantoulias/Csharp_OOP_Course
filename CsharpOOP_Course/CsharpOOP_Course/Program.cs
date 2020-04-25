@@ -101,7 +101,8 @@ namespace CsharpOOP_Course
             //Exercises_Advanced_4.PlayingWithConcurrentCollections();
 
             //Advanced 5
-            Exercises_Advanced_5.ProcessExercise();
+            //Exercises_Advanced_5.ProcessExercise();
+            Exercises_Advanced_5.MultiDimensionsExercise();
 
             Console.ReadLine();
         }
