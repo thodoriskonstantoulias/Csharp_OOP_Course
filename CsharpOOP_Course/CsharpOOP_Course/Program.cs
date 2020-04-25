@@ -103,7 +103,8 @@ namespace CsharpOOP_Course
             //Advanced 5
             //Exercises_Advanced_5.ProcessExercise();
             //Exercises_Advanced_5.MultiDimensionsExercise();
-            Exercises_Advanced_5.JaggedArraysExercise();
+            //Exercises_Advanced_5.JaggedArraysExercise();
+            Exercises_Advanced_5.PLayingWittJSONSerializer();
 
             Console.ReadLine();
         }

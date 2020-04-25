@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -53,5 +54,37 @@ namespace CsharpOOP_Course.Advanced
                 }
             }
         }
-    } 
+
+        public static void PLayingWittJSONSerializer()
+        {
+            List<PersonForJson> list = new List<PersonForJson>()
+            {
+                new PersonForJson{Name = "Ted",Age = 29, Salary = 10300.33},
+                new PersonForJson{Name = "Kostas",Age = 39, Salary = 140300.33}
+            };
+
+            var json = JsonConvert.SerializeObject(list);
+            Console.WriteLine(json);
+
+            var fake = JsonConvert.DeserializeObject<List<FakePersonForJson>>(json);
+            foreach (var item in fake)
+            {
+                Console.WriteLine(item.Name);
+            }
+        }
+    }
+    
+    public class PersonForJson
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public double Salary { get; set; }
+    }
+
+    public class FakePersonForJson
+    {
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public double Salary { get; set; }
+    }
 }
