@@ -40,5 +40,18 @@ namespace CsharpOOP_Course.Advanced
                 }
             }
         }
+
+        public static void JaggedArraysExercise()
+        {
+            int[][] jagged = { new int[] { 1, 2, 3 }, new int[] { 1, 4, 5, 8 }, new int[] { 1, 3, 6, 6, 2 } };
+            for (int i = 0; i < jagged.Length; i++)
+            {
+                Console.WriteLine("Now accessing array no " + (i+1));
+                for (int j = 0; j < jagged[i].Length; j++)
+                {
+                    Console.WriteLine("Element " + jagged[i][j]); 
+                }
+            }
+        }
     } 
 }
